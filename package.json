@@ -1,0 +1,15 @@
+{
+  "name": "targetku-webpush",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "check": "node --check app.js && node --check sw.js && node --check api/_lib.js && node --check api/push-config.js && node --check api/subscribe.js && node --check api/unsubscribe.js && node --check api/reminder.js && node --check api/test-notification.js && node --check api/send-notification.js && node --check api/ai-chat.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "1.1.0",
+    "web-push": "3.6.7"
+  }
+}
